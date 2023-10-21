@@ -3,9 +3,9 @@ import { setInner, getValue } from "https://jscroot.github.io/element/croot.js";
 import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.js";
 
 export default function PostSignUp() {
-    let target_url = "https://asia-southeast2-xenon-hawk-402203.cloudfunctions.net/Billblis";
+    let target_url = "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/healhero";
     let tokenkey = "token";
-    let tokenvalue = "5f2dcd0e6f39ad4515c8397819a04a22bd6ff03d63b0eaa5913c9e93a217c33b";
+    let tokenvalue = "8831334360c5dd8d50d0947a6fafa1b9e710b46c85ff1d33942b752f559ae3fa";
     let datainjson = {
         "username": getValue("username"),
         "password": getValue("password")
