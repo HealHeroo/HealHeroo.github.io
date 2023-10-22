@@ -5,7 +5,7 @@ import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.
 export default function PostSignUp() {
     let target_url = "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/healhero";
     let tokenkey = "token";
-    let tokenvalue = "a3fb906e992798dc25b99be837fc2a45c65724268d3a119f92f1d97f9455e78c";
+    let tokenvalue = "6536ef4d8812e359ac233cc3c6c66b3390500a96f66e0357b4e7af6245e3b9bb";
     let datainjson = {
         "username": getValue("username"),
         "password": getValue("password")
@@ -26,7 +26,7 @@ function responseData(result) {
         alert("Login Failed" + "Username or Password Wrong")
         console.log(result.message);
     }
-    
+
     // setCookieWithExpireHour("token", result.token, 2);
     // alert("Selamat Datang")
     // window.location.href = "dashboard.html";
