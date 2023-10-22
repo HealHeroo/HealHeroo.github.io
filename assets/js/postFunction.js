@@ -1,6 +1,6 @@
 import { postWithToken } from "https://jscroot.github.io/api/croot.js";
 import { setInner, getValue } from "https://jscroot.github.io/element/croot.js";
-// import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.js";
+import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.js";
 
 export default function PostSignUp() {
     let target_url = "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/healhero";
@@ -32,10 +32,10 @@ function responseData(result) {
     // window.location.href = "dashboard.html";
 }
 
-function setCookieWithExpireHour(cname, cvalue, exhour) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exhour * 60 * 60 * 1000));
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/" + "secure; HttpOnly; samesite=Strict";
-    // Set-Cookie: id=a3fWa; Expires=Thu, 21 Oct 2021 07:28:00 GMT; Secure; HttpOnly; SameSite=Strict
-}
+// function setCookieWithExpireHour(cname, cvalue, exhour) {
+//     const d = new Date();
+//     d.setTime(d.getTime() + (exhour * 60 * 60 * 1000));
+//     let expires = "expires=" + d.toUTCString();
+//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/" + "secure; HttpOnly; samesite=Strict";
+//     // Set-Cookie: id=a3fWa; Expires=Thu, 21 Oct 2021 07:28:00 GMT; Secure; HttpOnly; SameSite=Strict
+// }
