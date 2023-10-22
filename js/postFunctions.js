@@ -18,12 +18,12 @@ export default function PostSignUp() {
 function responseData(result) {
 
     // setInner("pesan", result.message);
-    if (result.message == "Welcome..") {
+    if (result.message == "Selamat Datang") {
         setCookieWithExpireHour("token", result.token, 2);
         alert("Login Successfully " + result.message)
         window.location.href = "dashboard.html";
     } else {
-        alert("Login Failed " + "wrong username or password")
+        alert("Gagal Masuk " + "wrong username or password")
         console.log(result.message);
     }
 }
