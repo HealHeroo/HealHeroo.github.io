@@ -5,7 +5,7 @@ import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.
 export default function PostSignUp() {
     let target_url = "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/healhero";
     let tokenkey = "token";
-    let tokenvalue = "b0bf5745bdfea9547e459b5c8c09df13bbad60ef1b5cdf0dbea24aa462aa3ac2";
+    let tokenvalue = "30d6d6cf93758256d3c87177e67a56dfe43b9e711e47296abe57383a7707e3c6";
     let datainjson = {
         "username": getValue("username"),
         "password": getValue("password")
