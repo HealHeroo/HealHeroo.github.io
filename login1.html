@@ -161,16 +161,19 @@
 <!-- Required Jqurey -->
 
 <script type="module" src="./assets/js/post.js"></script>
-    <script>
-      // Nama cookie yang akan diperiksa
-      const cookieName = "token";
+<script type="module">
+	// Nama cookie yang akan diperiksa
+
+	import {getCookie} from "https://jscroot.github.io/cookie/croot.js";
+	const cookieName = "token";
+
+	// Periksa apakah cookie ada dengan menggunakan fungsi dari file cookieUtil.js
+	if (getCookie(cookieName)) {
+		// Jika cookie tidak ada, arahkan kembali ke halaman login
+		window.location.href = "dashboard.html";
+	}
+</script>
   
-      // Periksa apakah cookie ada dengan menggunakan fungsi dari file cookieUtil.js
-      if (isCookieExist(cookieName)) {
-        // Jika cookie tidak ada, arahkan kembali ke halaman login
-        window.location.href = "dashboard.html";
-      }
-    </script>
 
 
 <!-- <script src="assets/plugins/jquery/dist/jquery.min.js"></script>

@@ -18,8 +18,16 @@ export default function PostSignUp() {
 function responseData(result) {
     
     // setInner("pesan", result.message);
+    if(result.message == "ANNYEONG..Welcome") {
+        setCookieWithExpireHour("token", result.token, 2);
+        alert("Login Successfully" + result.message)
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Login Failed" + "Username or Password Wrong")
+        console.log(result.message);
+    }
     
-    setCookieWithExpireHour("token", result.token, 2);
-    alert("Selamat Datang")
-    window.location.href = "dashboard.html";
+    // setCookieWithExpireHour("token", result.token, 2);
+    // alert("Selamat Datang")
+    // window.location.href = "dashboard.html";
 }
