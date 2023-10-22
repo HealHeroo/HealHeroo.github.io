@@ -160,7 +160,7 @@
                            <div class="dropdown-divider m-0"></div>
                         </li>
                         <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
-                        <li><a href="login1.html"><i class="icon-logout"></i> Logout</a></li>
+                        <li><a href="login1.html"><i class="icon-logout" onclick="logout()"></i> Logout</a></li>
 
                      </ul>
                   </li>
@@ -898,6 +898,19 @@
         window.location.href = "login1.html";
       }
     </script>
+   <!-- END JS LOGIN -->
+
+   <!-- JS LOGOUT -->
+   <script>
+      function logout(){
+        let konfirmasi= confirm ('anda yakin akan logout?') 
+        if (konfirmasi) {
+          deleteCookie("token");
+        }
+        
+      }
+    </script>
+    <!-- END JS LOGOUT -->
 
    <!-- Required Jqurey -->
    <script src="assets/plugins/Jquery/dist/jquery.min.js"></script>
