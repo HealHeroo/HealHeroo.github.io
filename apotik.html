@@ -168,34 +168,42 @@
         </nav>
         <!-- Navbar End -->
 
-        <!-- Indeks Massa tubuh Start -->
+        <!-- apotik Start -->
 
         <div class="container mt-5">
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">Kalkulator Indeks Masa Tubuh (BMI)</div>
-                <div class="card-body">
-                  <form id="bmi-form">
-                    <div class="form-group">
-                      <label for="weight">Berat (kg):</label>
-                      <input type="number" class="form-control" id="weight" step="0.01" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="height">Tinggi (m):</label>
-                      <input type="number" class="form-control" id="height" step="0.01" required />
-                    </div>
-                    <br />
-                    <button type="submit" class="btn btn-primary">Hitung BMI</button>
-                  </form>
-                  <div id="result" class="mt-3"></div>
-                </div>
-              </div>
-            </div>
+          <h1>Tabel Pembelian Obat</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nama Obat</th>
+                <th>Harga (Rp)</th>
+                <th>Jumlah</th>
+                <th>Total (Rp)</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="medicine-table">
+              <!-- Isi tabel obat akan ditampilkan di sini -->
+            </tbody>
+          </table>
+
+          <div class="form-group">
+            <label for="medicine-name">Nama Obat:</label>
+            <input type="text" class="form-control" id="medicine-name" />
           </div>
+          <div class="form-group">
+            <label for="medicine-price">Harga (Rp):</label>
+            <input type="number" class="form-control" id="medicine-price" />
+          </div>
+          <div class="form-group">
+            <label for="medicine-quantity">Jumlah:</label>
+            <input type="number" class="form-control" id="medicine-quantity" />
+          </div>
+          <button class="btn btn-primary" id="add-medicine">Tambah Obat</button>
+          <p>Total Harga: <span id="total-price">0</span> Rp</p>
         </div>
 
-        <!-- indeks massa tubuh End -->
+        <!-- apotik End -->
 
         <!-- Footer Start -->
         <div class="container-fluid pt-4 px-4">
