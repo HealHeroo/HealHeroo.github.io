@@ -169,28 +169,45 @@
         <!-- Navbar End -->
 
         <!-- apotik Start -->
-
+        <style>
+          .product-img {
+            max-width: 100px;
+            max-height: 100px;
+          }
+        </style>
         <div class="container mt-5">
-          <h1>Tabel Pembelian Obat</h1>
-            <tbody id="medicine-table">
-              <!-- Isi tabel obat akan ditampilkan di sini -->
+          <h1>Tabel Penjualan Produk Apotik</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Gambar</th>
+                <th>Nama Barang</th>
+                <th>Harga (Rp)</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="obat1.jpg" alt="Obat 1" class="product-img" /></td>
+                <td>Obat 1</td>
+                <td>100,000</td>
+                <td><button class="btn btn-primary">Beli</button></td>
+              </tr>
+              <tr>
+                <td><img src="obat2.jpg" alt="Obat 2" class="product-img" /></td>
+                <td>Obat 2</td>
+                <td>75,000</td>
+                <td><button class="btn btn-primary">Beli</button></td>
+              </tr>
+              <tr>
+                <td><img src="obat3.jpg" alt="Obat 3" class="product-img" /></td>
+                <td>Obat 3</td>
+                <td>120,000</td>
+                <td><button class="btn btn-primary">Beli</button></td>
+              </tr>
+              <!-- Tambahkan produk lainnya sesuai kebutuhan -->
             </tbody>
           </table>
-
-          <div class="form-group">
-            <label for="medicine-name">Nama Obat:</label>
-            <input type="text" class="form-control" id="medicine-name" />
-          </div>
-          <div class="form-group">
-            <label for="medicine-price">Harga (Rp):</label>
-            <input type="number" class="form-control" id="medicine-price" />
-          </div>
-          <div class="form-group">
-            <label for="medicine-quantity">Jumlah:</label>
-            <input type="number" class="form-control" id="medicine-quantity" />
-          </div>
-          <button class="btn btn-primary" id="add-medicine">Tambah Obat</button>
-          <p>Total Harga: <span id="total-price">0</span> Rp</p>
         </div>
 
         <!-- apotik End -->
