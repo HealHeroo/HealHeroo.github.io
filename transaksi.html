@@ -59,6 +59,7 @@
               </div>
             </div>
             <a href="apotik.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Apotik</a>
+            <a href="transaksi.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Keranjang</a>
             <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
             <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
             <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
@@ -168,44 +169,49 @@
         </nav>
         <!-- Navbar End -->
 
-        <!-- apotik Start -->
-        <div class="container mt-5">
-          <h1 class="text-center mb-4">Penjualan Produk Apotik</h1>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <img src="img/avatar.png" alt="obat1" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">Paracetamol</h5>
-                  <p class="card-text">Harga: Rp 100,000</p>
-                  <button class="btn btn-primary">Beli</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="img/avatar.png" alt="obat2" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">Holisti Care</h5>
-                  <p class="card-text">Harga: Rp 100,000</p>
-                  <button class="btn btn-primary">Beli</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="img/avatar.png" alt="obat3" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">DAPYRIN</h5>
-                  <p class="card-text">Harga: Rp 50,000</p>
-                  <button class="btn btn-primary">Beli</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- transaksi Start -->
 
-        <!-- apotik End -->
+        <section class="konten">
+          <div class="container">
+            <h1>Checkout</h1>
+            <hr />
+
+            <!-- Informasi Pengiriman -->
+            <h3>Informasi Pengiriman</h3>
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" class="form-control" id="nama" required />
+            </div>
+            <div class="form-group">
+              <label for="telepon">Telepon</label>
+              <input type="text" class="form-control" id="telepon" required />
+            </div>
+            <div class="form-group">
+              <label for="alamat">Alamat Pengiriman</label>
+              <textarea class="form-control" id="alamat" required></textarea>
+            </div>
+
+            <!-- Informasi Pembayaran -->
+            <h3>Informasi Pembayaran</h3>
+            <div class="form-group">
+              <label for="metodePembayaran">Metode Pembayaran</label>
+              <select class="form-control" id="metodePembayaran">
+                <option value="transfer">Transfer Bank</option>
+                <option value="tunai">Tunai</option>
+              </select>
+            </div>
+
+            <!-- Daftar Produk yang Dibeli -->
+            <h3>Daftar Produk yang Dibeli</h3>
+            <ul id="produkList">
+              <!-- Produk yang akan ditambahkan dengan JavaScript -->
+            </ul>
+
+            <button class="btn btn-primary" id="checkoutButton">Checkout</button>
+          </div>
+        </section>
+
+        <!-- transaksi End -->
 
         <!-- Footer Start -->
         <div class="container-fluid pt-4 px-4">
