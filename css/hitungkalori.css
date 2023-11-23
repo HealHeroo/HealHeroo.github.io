@@ -25,14 +25,6 @@ body {
     color: #007bff;
   }
 
-  .btn-primary,
-  .btn-success {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
 
   #result {
     margin-top: 20px;
