@@ -108,30 +108,29 @@
 
         <!-- Recent Sales Start -->
         <h1>Tambah Obat</h1>
-        <form action="proses.php" method="post" enctype="multipart/form-data">
-          <div class="form-group">
-            <label for="nama-obat" style="width: 1500px;">Nama Obat</label>
-            <input type="text" class="form-control-sm" name="nama-obat" id="nama-obat" required>
-          </div>
-          <div class="form-group">
-            <label for="deskripsi" style="width: 1500px;">Deskripsi</label>
-            <textarea class="form-control-sm" name="deskripsi" id="deskripsi" rows="3" required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="harga" style="width: 1500px;">Harga</label>
-            <input type="number" class="form-control-sm" name="harga" id="harga" required>
-          </div>
-          <br>
-          <div class="form-group">
-            <label for="gambar" style="width: 1500px;">Gambar</label>
-            <input type="file" class="form-control-file" name="gambar" id="gambar" required>
-          </div>
-          <br>
-          <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-        </form>
-      
+  <form action="proses.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="nama-obat">Nama Obat</label>
+      <input type="text" class="form-control" name="nama-obat" id="nama-obat" required>
+    </div>
+    <div class="form-group">
+      <label for="deskripsi">Deskripsi</label>
+      <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="harga">Harga</label>
+      <input type="number" class="form-control" name="harga" id="harga" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="gambar">Gambar</label>
+      <input type="file" class="form-control-file" name="gambar" id="gambar" required>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
-
+  
         <div class="container-fluid pt-4 px-4">
           <div class="bg-light text-center rounded p-4">
             <div class="d-flex align-items-center justify-content-between mb-4">
