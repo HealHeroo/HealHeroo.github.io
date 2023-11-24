@@ -158,6 +158,59 @@
         </div>
         <!-- Recent Sales End -->
   
+        <!-- Content Start -->
+<div class="content">
+  <!-- Navbar Start -->
+  <!-- ... (unchanged) ... -->
+
+  <!-- Recent Sales Start -->
+  <div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h6 class="mb-0">Data Pesanan</h6>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Tambah Pesanan</button>
+      </div>
+      <div class="table-responsive">
+        <!-- ... (unchanged) ... -->
+      </div>
+    </div>
+  </div>
+  <!-- Recent Sales End -->
+
+  <!-- Order Form Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Tambah Pesanan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Order Form Start -->
+          <form>
+            <div class="mb-3">
+              <label for="customerName" class="form-label">Nama Pelanggan</label>
+              <input type="text" class="form-control" id="customerName" placeholder="Masukkan nama pelanggan">
+            </div>
+            <div class="mb-3">
+              <label for="orderAmount" class="form-label">Jumlah Pesanan</label>
+              <input type="number" class="form-control" id="orderAmount" placeholder="Masukkan jumlah pesanan">
+            </div>
+            <!-- Add more form fields as needed -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <!-- Order Form End -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Order Form Modal End -->
+
+  <!-- Footer Start -->
+  <!-- ... (unchanged) ... -->
+</div>
+<!-- Content End -->
+
 
         <!-- Footer Start -->
         <div class="container-fluid pt-4 px-4">
