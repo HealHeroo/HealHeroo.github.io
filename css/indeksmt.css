@@ -1,88 +1,50 @@
-.card {
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #f8f9fa;
+  }
 
-.card-header {
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 10px 10px 0 0;
-}
+  .container-xxl {
+    min-height: 100vh;
+  }
 
-.card-body {
-  padding: 20px;
-}
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
 
-.form-group {
-  margin-bottom: 20px;
-}
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    text-align: center;
+  }
 
-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-}
+  .card-body {
+    padding: 20px;
+  }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  .form-group {
+    margin-bottom: 20px;
+  }
 
-button:hover {
-  background-color: #0056b3;
-}
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-#result {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #28a745;
-}
-
-/* Additional styles for the page layout */
-.container {
-  margin-top: 50px;
-}
-
-.navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar {
-  background-color: #007bff;
-  color: #fff;
-  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar .navbar {
-  border-bottom: 1px solid #0056b3;
-}
-
-.sidebar .nav-item a {
-  color: #fff;
-}
-
-.sidebar .nav-item.active a {
-  background-color: #0056b3;
-}
-
-.sidebar .dropdown-menu {
-  background-color: #0056b3;
-}
-
-.content {
-  padding-top: 60px;
-}
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
