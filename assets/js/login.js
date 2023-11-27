@@ -39,7 +39,7 @@ const responseData = (result) => {
     Swal.fire({
       icon: "success",
       title: "Login Successful",
-      text: "You have successfully logged in.",
+      text: "You have successfully logged in...",
     }).then(() => {
       // Redirect based on the user role
       if (result.role === "pengguna") {
