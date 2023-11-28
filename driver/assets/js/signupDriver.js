@@ -1,12 +1,24 @@
-import { postWithToken } from "https://jscroot.github.io/api/croot.js";
 import { getValue } from "https://jscroot.github.io/element/croot.js";
-import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
+
+function postSignUpDriver(target_url, datajson, responseFunction) {
+  var raw = JSON.stringify(datajson);
+
+  var requestOptions = {
+    method: "POST",
+    body: raw,
+    redirect: "follow",
+  };
+
+  fetch(target_url, requestOptions)
+    .then((response) => response.text())
+    .then((result) => responseFunction(JSON.parse(result)))
+    .catch((error) => console.log("error", error));
+}
 
 const SignUpDriver = () => {
   const target_url =
     "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/singup_driver";
-  const tokenvalue = getCookie("Authorization");
-  const tokenkey = "Authorization";
+
   const datainjson = {
     namalengkap: getValue("namalengkap"),
     jeniskelamin: getValue("jeniskelamin"),
@@ -18,23 +30,23 @@ const SignUpDriver = () => {
       password: getValue("password"),
     },
   };
-  postWithToken(target_url, tokenkey, tokenvalue, datainjson, responseData);
   console.log(datainjson);
+  postSignUpDriver(target_url, datainjson, responseData);
 };
 
 const responseData = (result) => {
   if (result.status) {
     Swal.fire({
       icon: "success",
-      title: "Insert Successful",
+      title: "Sign Up Successful",
       text: result.message,
     }).then(() => {
-      window.location.reload();
+      window.location.href = "../signin.html";
     });
   } else {
     Swal.fire({
       icon: "error",
-      title: "Insert Failed",
+      title: "Sign Up Failed",
       text: result.message,
     });
   }
