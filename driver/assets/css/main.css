@@ -2667,3 +2667,49 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.content {
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f85a40;
+  color: #fff;
+  border-bottom: 0;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.table th, .table td {
+  text-align: center;
+}
