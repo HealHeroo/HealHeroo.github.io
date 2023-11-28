@@ -25,7 +25,7 @@ const PostSignIn = () => {
     "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/login";
   const datainjson = {
     email: getValue("email"),
-    password: getValue("hs-toggle-password"),
+    password: getValue("password"),
   };
 
   postWithToken(target_url, datainjson, responseData);
