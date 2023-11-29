@@ -43,7 +43,7 @@ const responseData = (result) => {
     }).then(() => {
       // Redirect based on the user role
       if (result.role === "pengguna") {
-        window.location.href = "index.html";
+        window.location.href = "./pengguna/index.html";
       } else if (result.role === "driver") {
         window.location.href = "./driver/index.html";
       } else if (result.role === "admin") {
