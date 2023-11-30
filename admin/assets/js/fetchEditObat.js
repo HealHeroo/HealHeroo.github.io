@@ -17,4 +17,9 @@ function get(target_url, responseFunction) {
     .then((result) => responseFunction(JSON.parse(result)))
     .catch((error) => console.log("error", error));
 }
+window.editObat = (idObat) => {
+    // Logic to fetch specific obat data for editing
+    const editUrl = `https://asia-southeast2-peak-equator-402307.cloudfunctions.net/obat_healhero?id=${idObat}`;
+    get(editUrl, isiData);
+  };
 get(urlFetch, isiData);
