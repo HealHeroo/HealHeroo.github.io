@@ -36,3 +36,5 @@ const responseData = (result) => {
 };
 
 window.postTambahObat = postTambahObat;
+
+
