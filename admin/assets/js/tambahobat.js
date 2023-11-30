@@ -24,7 +24,6 @@ const TambahObat = () => {
     jenis_obat: getValue("jenis_obat"),
     keterangan: getValue("keterangan"),
     harga: getValue("harga"),
-    platmotor: getValue("platmotor"),
   };
   console.log(datainjson);
   PostTambahObat(target_url, datainjson, responseData);
