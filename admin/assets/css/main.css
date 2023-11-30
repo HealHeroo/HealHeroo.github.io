@@ -21,7 +21,7 @@
 :root {
   --color-default: #222222;
   --color-primary: #008374;
-  --color-secondary: #008374;
+  --color-secondary: #f85a40;
 }
 
 /* Smooth scroll behavior */
@@ -2684,7 +2684,7 @@ body {
 }
 
 .card-header {
-  background-color: #f85a40;
+  background-color: #008374;
   color: #fff;
   border-bottom: 0;
   border-radius: 15px 15px 0 0;
@@ -2701,8 +2701,8 @@ body {
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #f85a40;
+  border-color: #f85a40;
 }
 
 .btn-primary:hover {
