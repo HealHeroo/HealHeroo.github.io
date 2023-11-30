@@ -1,6 +1,6 @@
 import { getValue } from "https://jscroot.github.io/element/croot.js";
 
-function PostTambahObat(target_url, datajson, responseFunction) {
+function postTambahObat(target_url, datajson, responseFunction) {
   var raw = JSON.stringify(datajson);
 
   var requestOptions = {
@@ -26,7 +26,7 @@ const TambahObat = () => {
     harga: getValue("harga"),
   };
   console.log(datainjson);
-  PostTambahObat(target_url, datainjson, responseData);
+  postTambahObat(target_url, datainjson, responseData);
 };
 
 const responseData = (result) => {
