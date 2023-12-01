@@ -38,8 +38,8 @@ export const tableObat = `
   </div>
 </td>
 <td class="px-6 py-3 whitespace-nowrap">
-    <button class="btn btn-outline-primary btn-sm" onclick="editObat('#IDOBAT#')">Edit</button>
-    <button class="btn btn-outline-danger btn-sm" onclick="deleteObat('#IDOBAT#')">Delete</button>
+    <button class="btn btn-outline-primary btn-sm" onclick="editObat('#IDEDIT#')">Edit</button>
+    <button class="btn btn-outline-danger btn-sm" onclick="deleteObat('#IDHAPUS#')">Delete</button>
   </td>
 </td>
 </tr>
