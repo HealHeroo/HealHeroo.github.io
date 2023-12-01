@@ -1,6 +1,6 @@
-import { isiData } from "/js/editObat.js";
+import { isiData } from "./editObat.js";
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
-import { urlFetch } from "/js/urlEditObat.js";
+import { urlFetch } from "./urlEditObat.js";
 
 function get(target_url, responseFunction) {
   const myHeaders = new Headers();
