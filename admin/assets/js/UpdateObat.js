@@ -24,8 +24,8 @@ const putData = (target_url, datajson, responseFunction) => {
 };
 
 const pushData = () => {
-  const obatId = getValue("nama_obat"); 
-  const jenis_obat = getValue("jenis_obat");
+  const obatId = getValue("namaobat"); 
+  const jenisobat = getValue("jenisobat");
   const keterangan = getValue("keterangan");
   const harga = getValue("harga");
 
@@ -33,7 +33,7 @@ const pushData = () => {
   const data = {
     obat: {
       _id: obatId,
-      jenisobat: jenis_obat,
+      jenisobat: jenisobat,
       keterangan: keterangan,
       harga: harga,
     },
