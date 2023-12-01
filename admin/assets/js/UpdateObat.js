@@ -24,12 +24,12 @@ const putData = (target_url, datajson, responseFunction) => {
 };
 
 const pushData = () => {
-  const pembimbingValue = getValue("namalengkappembimbing");
+  const obatValue = getValue("namaobat");
 
   // Create the updated data object
   const data = {
-    pembimbing: {
-      _id: pembimbingValue,
+    obat: {
+      _id: obatValue,
     },
   };
   putData(urlPUT, data, AmbilResponse);
