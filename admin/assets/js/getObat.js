@@ -58,7 +58,9 @@ export function isiRow(value) {
     .replace("#NAMAOBAT#", value.nama_obat)
     .replace("#JENISOBAT#", value.jenis_obat)
     .replace("#KETERANGAN#", value.keterangan)
-    .replace("#HARGA#", value.harga);
+    .replace("#HARGA#", value.harga)
+    .replace("#IDEDIT#", value._id)
+    .replace("#IDHAPUS#", value._id);
   addInner("tableDaftarObat", content);
 }
 
