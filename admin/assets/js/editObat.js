@@ -32,7 +32,7 @@
 // editObat.js
 // editObat.js
 
-export const editObat = (results) => {
+export const isiData = (results) => {
     const inputMapping = [
       { id: "nama_obat", path: "obat.nama_obat" },
       { id: "jenis_obat", path: "obat.jenis_obat" },
