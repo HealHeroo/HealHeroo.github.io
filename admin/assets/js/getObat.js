@@ -38,7 +38,13 @@ export const tableObat = `
   </div>
 </td>
 <td class="px-6 py-3 whitespace-nowrap">
-    <button class="btn btn-outline-primary btn-sm" onclick="editObat?obatId=#IDEDIT#">Edit</button>
+<a
+      href="editObat?obatId=#IDEDIT##"
+      class="inline-flex items-center px-2 cursor-pointer text-sm text-green-600 decoration-2 hover:underline font-medium"
+    >
+      Edit
+ </a>
+  
     <button class="btn btn-outline-danger btn-sm" onclick="deleteObat('#IDHAPUS#')">Delete</button>
   </td>
 </td>
