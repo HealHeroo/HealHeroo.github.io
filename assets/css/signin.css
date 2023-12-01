@@ -31,7 +31,7 @@ body {
   border-radius: 5px;
 }
 
-.btn-primary {
+.btn{
   background-color: #d9ead3;
   color: black;
   border: none;
@@ -42,7 +42,7 @@ body {
   cursor: pointer;
 }
 
-.btn-primary:hover {
+.btn:hover {
   background-color: #8db77e;
 }
 
