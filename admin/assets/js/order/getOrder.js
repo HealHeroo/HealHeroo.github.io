@@ -81,7 +81,7 @@ export function responseData(results) {
 
 
 export function isiRow(value) {
-  const content = tablePengguna
+  const content = tableOrder
     .replace("#PENGGUNA#", value._id)
     .replace("#DRIVER#", value._id)
     .replace("#OBAT#", value._id)
