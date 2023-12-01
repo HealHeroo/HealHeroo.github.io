@@ -13,7 +13,6 @@ export const tablePengguna = `
     >
   </div>
 </td>
-<td class="px-6 py-3 whitespace-nowrap"></td>
 <td class="px-6 py-3 whitespace-nowrap">
   <div class="flex items-center">
     <span
