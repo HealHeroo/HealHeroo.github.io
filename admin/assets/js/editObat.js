@@ -43,6 +43,7 @@ export const isiData = (results) => {
     inputMapping.forEach(({ id, path, index, property }) => {
       const inputElement = document.getElementById(id);
       const value = getNestedValue(results, path, index, property);
+      console.log(`Setting value for ${id}:`, value);
       inputElement.value = value;
     });
   };
