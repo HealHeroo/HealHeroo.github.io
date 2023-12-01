@@ -25,7 +25,7 @@ export const tableOrder = `
   <div class="flex items-center">
     <span
       class="text-sm font-semibold text-gray-800 dark:text-gray-200"
-      >OBAT#</span
+      >#OBAT#</span
     >
   </div>
 </td>
