@@ -14,12 +14,12 @@ export const tableObat = `
   </div>
 </td>
 <td class="px-6 py-3 whitespace-nowrap">
-  <div class="flex items-center">
-    <span
-      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
-      >#JENISOBAT#</span
-    >
-  </div>
+<div class="flex items-center">
+  <span
+    class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+    >#JENISOBAT#</span
+  >
+</div>
 </td>
 <td class="px-6 py-3 whitespace-nowrap">
 <div class="flex items-center">
