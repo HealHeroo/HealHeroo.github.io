@@ -24,16 +24,16 @@ const putData = (target_url, datajson, responseFunction) => {
 };
 
 const pushData = () => {
-  const obatId = getValue("namaobat"); 
-  const jenisobat = getValue("jenisobat");
-  const keterangan = getValue("keterangan");
-  const harga = getValue("harga");
+  obatId = getValue("nama_obat"); 
+  jenis_obat = getValue("jenis_obat");
+  keterangan = getValue("keterangan");
+  harga = getValue("harga");
 
   // Create the updated data object
   const data = {
     obat: {
       _id: obatId,
-      jenisobat: jenisobat,
+      jenis_obat: jenis_obat,
       keterangan: keterangan,
       harga: harga,
     },
