@@ -14,7 +14,7 @@ const deleteObat = async (IDHAPUS) => {
     cancelButtonText: "Batal",
   });
 
-  if (isConfirmed.isConfirmed) {
+  if (isConfirmed) {
     const myHeaders = new Headers();
     myHeaders.append("Authorization", authorizationToken);
 
