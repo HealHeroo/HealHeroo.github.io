@@ -39,7 +39,7 @@ export const tableObat = `
 </td>
 <td class="px-6 py-3 whitespace-nowrap">
 <a
-      href="updateObat?obatId=#IDEDIT#"
+      href="updateobat?obatId=#IDEDIT#"
       class="inline-flex items-center px-2 cursor-pointer text-sm text-green-600 decoration-2 hover:underline font-medium"
     >
       Edit
