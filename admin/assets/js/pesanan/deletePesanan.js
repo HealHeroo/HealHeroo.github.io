@@ -1,7 +1,7 @@
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
 
-const deletePengguna = async (IDHAPUS) => {
-  const penggunaId = IDHAPUS;
+const deletePesanan = async (IDHAPUS) => {
+  const pesananId = IDHAPUS;
   const authorizationToken = getCookie("Authorization");
 
   const isConfirmed = await Swal.fire({
@@ -19,8 +19,8 @@ const deletePengguna = async (IDHAPUS) => {
     myHeaders.append("Authorization", authorizationToken);
 
     const target_url =
-      "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/pengguna?id=" +
-     penggunaId;
+      "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/pesanan?id=" +
+     pesananId;
 
     try {
       const response = await fetch(target_url, {
@@ -46,4 +46,4 @@ const deletePengguna = async (IDHAPUS) => {
   }
 };
 
-window.deletePengguna = deletePengguna;
+window.deletePesanan = deletePesanan;
