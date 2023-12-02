@@ -5,7 +5,7 @@ const deletePesanan = async (IDHAPUS) => {
   const authorizationToken = getCookie("Authorization");
 
   const isConfirmed = await Swal.fire({
-    title: "Apakah Anda yakin ingin menghapus obat ini?",
+    title: "Apakah Anda yakin ingin menghapus data pengguna ini?",
     icon: "warning",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
