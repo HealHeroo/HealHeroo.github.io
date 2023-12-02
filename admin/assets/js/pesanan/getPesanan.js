@@ -21,6 +21,14 @@ export const tablePesanan = `
     >
   </div>
 </td>
+<td class="px-6 py-3 whitespace-nowrap">
+  <div class="flex items-center">
+    <span
+      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+      >#NAMAOBAT#</span
+    >
+  </div>
+</td>
 <td class="h-px w-px whitespace-nowrap">
   <div class="flex items-center">
     <span
@@ -88,6 +96,7 @@ export function isiRow(value) {
   const content = tablePesanan
     .replace("#NAMA#", value.nama)
     .replace("#ALAMAT#", value.alamat)
+    .replace("#NAMAOBAT#", value.alamat)
     .replace("#NOMORHP#", value.nomorhp)
     .replace("#NAMAOBAT#", value.namaobat)
     .replace("#QUANTITY#", value.quantity)
