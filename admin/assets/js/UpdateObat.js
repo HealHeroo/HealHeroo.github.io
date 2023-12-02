@@ -31,12 +31,12 @@ const pushData = () => {
 
   // Create the updated data object
   const data = {
-    obat: {
-      _id: nama_obat,
+     
+      nama_obat: nama_obat,
       jenis_obat: jenis_obat,
       keterangan: keterangan,
       harga: harga,
-    },
+    
   };
 
   putData(urlPUT, data, AmbilResponse);
