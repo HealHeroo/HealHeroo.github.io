@@ -38,4 +38,4 @@ const get = (target_url, responseFunction) => {
     });
 };
 
-get(URLGetOrder, responseData);
+get(URLGetPesanan, responseData);
