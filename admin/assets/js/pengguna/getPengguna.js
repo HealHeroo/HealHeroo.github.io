@@ -46,7 +46,7 @@ export const tablePengguna = `
   </div>
 </td>
 <td class="px-6 py-3 whitespace-nowrap">
-    <button class="btn btn-outline-danger btn-sm" onclick="deletePengguna('#IDPENGGUNA#')">Delete</button>
+    <button class="btn btn-outline-danger btn-sm" onclick="deletePengguna('#IDHAPUS#')">Delete</button>
   </td>
 </td>
 </tr>
