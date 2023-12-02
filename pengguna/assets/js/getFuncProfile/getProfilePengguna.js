@@ -15,29 +15,29 @@ export const dataPengguna = `
                 <div class="row">
                     <div class="col-md-6">
                       <div class="mb-3">
-                        <label for="fullName" class="form-label"><strong>Full Name</strong></label>
+                        <label for="#NAMALENGKAP#" class="form-label"><strong>Full Name</strong></label>
                         <p class="card-text">#NAMALENGKAP#</p>
                       </div>
                       <div class="mb-3">
-                        <label for="dob" class="form-label"><strong>Date of Birth</strong></label>
-                        <p class="card-text">TANGGALLAHIR</p>
+                        <label for="#TANGGALLAHIR#" class="form-label"><strong>Date of Birth</strong></label>
+                        <p class="card-text">#TANGGALLAHIR#</p>
                       </div>
                       <div class="mb-3">
-                        <label for="gender" class="form-label"><strong>Gender</strong></label>
-                        <p class="card-text">GENDER</p>
+                        <label for="#GENDER#" class="form-label"><strong>Gender</strong></label>
+                        <p class="card-text">#GENDER#</p>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="mb-3">
-                        <label for="phoneNumber" class="form-label"><strong>Phone Number</strong></label>
+                        <label for="#NOMORHP#" class="form-label"><strong>Phone Number</strong></label>
                         <p class="card-text">#NOMORHP#</p>
                       </div>
                       <div class="mb-3">
-                        <label for="address" class="form-label"><strong>Address</strong></label>
+                        <label for="#ALAMAT#" class="form-label"><strong>Address</strong></label>
                         <p class="card-text">#ALAMAT#</p>
                       </div>
                       <div class="mb-3">
-                        <label for="email" class="form-label"><strong>Email</strong></label>
+                        <label for="#EMAIL#" class="form-label"><strong>Email</strong></label>
                         <p class="card-text">#EMAIL#</p>
                       </div>
                     </div>
