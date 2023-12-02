@@ -96,8 +96,8 @@ export function isiRow(value) {
   const content = tablePesanan
     .replace("#NAMA#", value.nama)
     .replace("#ALAMAT#", value.alamat)
-    .replace("#NAMAOBAT#", value.alamat)
-    .replace("#NOMORHP#", value.nomorhp)
+    .replace("#NOMORHP#", value.alamat)
+    .replace("#NAMAOBAT#", value.nomorhp)
     .replace("#NAMAOBAT#", value.namaobat)
     .replace("#QUANTITY#", value.quantity)
     .replace("#HARGA#", value.harga)
