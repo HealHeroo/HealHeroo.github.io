@@ -3,38 +3,70 @@ import { addInner, hide } from "https://jscroot.github.io/element/croot.js";
 export const URLGetObat =
   "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/obat_healhero";
 
-  export const tableObat = `
-  <tr>
-    <div class="card">
-        <img src="path/to/medicine/image.jpg" class="card-img-top" alt="Medicine Image">
-        <div class="card-body">
-          <h5 class="card-title">${medicine.nama_obat}</h5>
-          <p class="card-text">${medicine.jenis_obat}</p>
-          <p class="card-text">${medicine.keterangan}</p>
-          <p class="card-text">Harga: ${medicine.harga}</p>
-          <a href="#" class="btn btn-primary">Buy Now</a>
-        </div>
-      </div>
-  </tr>
-  `;
+export const tableObat = `
+<tr>
+<td class="px-6 py-3 whitespace-nowrap">
+  <div class="flex items-center">
+    <span
+      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+      >#NAMAOBAT#</span
+    >
+  </div>
+</td>
+<td class="px-6 py-3 whitespace-nowrap">
+<div class="flex items-center">
+  <span
+    class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+    >#JENISOBAT#</span
+  >
+</div>
+</td>
+<td class="px-6 py-3 whitespace-nowrap">
+<div class="flex items-center">
+  <span
+    class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+    >#KETERANGAN#</span
+  >
+</div>
+</td>
+<td class="h-px w-px whitespace-nowrap">
+  <div class="flex items-center">
+    <span
+      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+      >#HARGA#</span
+    >
+  </div>
+</td>
+<td class="px-6 py-3 whitespace-nowrap">
+<a
+      href="updateobat?obatId=#IDEDIT#"
+      class="inline-flex items-center px-2 cursor-pointer text-sm text-green-600 decoration-2 hover:underline font-medium"
+    >
+      Edit
+ </a>
+  
+    <button class="btn btn-outline-danger btn-sm" onclick="deleteObat('#IDHAPUS#')">Delete</button>
+  </td>
+</td>
+</tr>
+`;
 
-  export function responseData(results) {
+
+export function responseData(results) {
     console.log(results);
      results.forEach(isiRow);
     hide("skeletonLoader");
 }
-  
-  export function isiRow(value) {
-    const content = tableObat
-      .replace("#NAMAOBAT#", value.nama_obat)
-      .replace("#JENISOBAT#", value.jenis_obat)
-      .replace("#KETERANGAN#", value.keterangan)
-      .replace("#HARGA#", value.harga);
-    addInner("tableDaftarObat", content);
-  }
-  
-  function beliObat(namaObat) {
-    // Implement your logic for purchasing the medicine here
-    alert(`Anda telah membeli obat: ${namaObat}`);
-  }
-  
+
+
+export function isiRow(value) {
+  const content = tableObat
+    .replace("#NAMAOBAT#", value.nama_obat)
+    .replace("#JENISOBAT#", value.jenis_obat)
+    .replace("#KETERANGAN#", value.keterangan)
+    .replace("#HARGA#", value.harga)
+    .replace("#IDEDIT#", value._id)
+    .replace("#IDHAPUS#", value._id);
+  addInner("tableDaftarObat", content);
+}
+
