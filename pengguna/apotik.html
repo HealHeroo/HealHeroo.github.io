@@ -48,7 +48,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="kategori.html">Category</a></li>
+          <li><a href="datapengguna.html">Data Pengguna</a></li>
+          <li><a href="datadriver.html">Data Driver</a></li>
+          <li><a href="obat.html">Obat</a></li>
+          <li><a href="orders.html">Orders</a></li>
         </ul>
       </nav><!-- .navbar -->
   
@@ -70,7 +73,13 @@
         <!-- Header -->
         <div class="card-header d-flex justify-content-between align-items-center">
           <div>
-            <h2 class="text-xl font-semibold text-gray-800">Apotik HealHeroo</h2>
+            <h2 class="text-xl font-semibold text-gray-800">Daftar Obat</h2>
+            <p class="text-sm text-gray-600">Berikut merupakan data obat yang sudah terdaftar.</p>
+          </div>
+          <div>
+            <a href="tambahobat.html" class="btn btn-primary" data-toggle="modal">
+              Tambah Obat
+            </a>            
           </div>
         </div>
         <!-- End Header -->
@@ -130,8 +139,12 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script type="module" src="/assets/js/getObat/getObat.js"></script>
-  <script type="module" src="/assets/js/getObat/getObatFunction.js"></script>
-  
+  <script src="../admin/assets/js/main.js"></script>
+  <script type="module" src="../admin/assets/js/getObatFunction.js"></script>
+  <script type="module" src="../admin/assets/js/getObat.js"></script>
+  <script type="module" src="/admin/assets/js/deleteObat.js"></script>
+  <script type="module" src="/admin/assets/js/editObat.js"></script>
+  <script type="module" src="/admin/assets/js/fetchEditObat.js"></script>
+  <script type="module" src="/admin/assets/js/urlEditObat.js"></script>
 </body>
 </html>
