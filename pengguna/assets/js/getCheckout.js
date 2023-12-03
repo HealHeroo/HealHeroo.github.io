@@ -33,14 +33,6 @@ export const checkout = `
 </tr>
 `;
 
-
-export function responseData(results) {
-    console.log(results);
-     results.forEach(isiRow);
-    hide("skeletonLoader");
-}
-
-
 export function isiRow(obat) {
   const content = tableObat
     .replace("#NAMAOBAT#", obat.nama_obat)

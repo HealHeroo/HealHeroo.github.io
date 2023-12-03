@@ -62,52 +62,46 @@
 
 <div class="container mt-5">
     <h2 class="mb-4">Checkout</h2>
-
+    
     <!-- Order Summary -->
     <div class="card mb-4">
         <div class="card-header">
-          Order Summary
+            Order Summary
         </div>
         <div class="card-body" id="tabelCheckout">
-          <!-- Order details will be displayed here -->
+            <!-- Order details will be displayed here -->
         </div>
     </div>
-      
 
     <!-- Customer Information Form -->
-    <form>
-      <h4>Customer Information</h4>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="nama">Nama Pembeli</label>
-          <input type="text" class="form-control" id="nama" placeholder="Nama Anda" required>
+    <div>
+        <h4>Customer Information</h4>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nama">Nama Pembeli</label>
+                <input type="text" class="form-control" id="nama" placeholder="Nama Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="nomorhp">Nomor HP</label>
+                <input type="tel" class="form-control" id="nomorhp" placeholder="Nomor HP" required>
+            </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="nomorhp">Nomor HP</label>
-          <input type="tel" class="form-control" id="nomorhp" placeholder=" Nomor HP" required>
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" class="form-control" id="alamat" placeholder="Alamat Lengkap" required>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="alamat">Alamat</label>
-        <input type="text" class="form-control" id="alamat" placeholder="Alamat Lengkap" required>
-      </div>
 
-      <!-- Add more customer information fields as needed -->
+        <!-- Add more customer information fields as needed -->
 
-     
-      
+        <!-- Order Total -->
+        <div class="alert alert-info mt-4">
+            <p><strong>Total:</strong> $100.00</p>
+        </div>
 
-   
-
-      <!-- Order Total -->
-      <div class="alert alert-info mt-4">
-        <p><strong>Total:</strong> $100.00</p>
-      </div>
-
-      <!-- Submit Button -->
-      <button type="submit" class="btn btn-primary">Place Order</button>
-    </form>
-  </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Place Order</button>
+    </div>
+</div>
 
 <!-- Bootstrap JS and Popper.js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
