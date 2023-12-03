@@ -65,33 +65,31 @@
 
     <!-- Order Summary -->
     <div class="card mb-4">
-      <div class="card-header">
-        Order Summary
-      </div>
-      <div class="card-body">
-        <!-- Display order details here -->
-        <p><strong>Item:</strong> Nama Obat</p>
-        <p><strong>Harga:</strong> $100.00</p>
-        <!-- Add more details as needed -->
-      </div>
+        <div class="card-header">
+          Order Summary
+        </div>
+        <div class="card-body" id="tabelCheckout">
+          <!-- Order details will be displayed here -->
+        </div>
     </div>
+      
 
     <!-- Customer Information Form -->
     <form>
       <h4>Customer Information</h4>
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="fullName">Full Name</label>
-          <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+          <label for="nama">Nama Pembeli</label>
+          <input type="text" class="form-control" id="nama" placeholder="John Doe" required>
         </div>
         <div class="form-group col-md-6">
-          <label for="phoneNumber">Phone Number</label>
-          <input type="tel" class="form-control" id="phoneNumber" placeholder="+1 555-1234" required>
+          <label for="nomorhp">Nomor HP</label>
+          <input type="tel" class="form-control" id="nomorhp" placeholder="+1 555-1234" required>
         </div>
       </div>
       <div class="form-group">
-        <label for="address">Address</label>
-        <input type="text" class="form-control" id="address" placeholder="123 Main St, City" required>
+        <label for="alamat">Alamat</label>
+        <input type="text" class="form-control" id="alamat" placeholder="123 Main St, City" required>
       </div>
 
       <!-- Add more customer information fields as needed -->
