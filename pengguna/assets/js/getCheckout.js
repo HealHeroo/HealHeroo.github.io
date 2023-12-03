@@ -33,10 +33,10 @@ export const checkout = `
 </tr>
 `;
 
-export function isiRow(obat) {
+export function isiRow(value) {
   const content = tableObat
-    .replace("#NAMAOBAT#", obat.nama_obat)
-    .replace("#HARGA#", obat.harga)
+    .replace("#NAMAOBAT#", value.nama_obat)
+    .replace("#HARGA#", value.harga)
   addInner("tableCheckout", content);
 }
 
