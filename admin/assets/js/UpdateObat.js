@@ -43,6 +43,5 @@ const pushData = () => {
 const UpdateObat = document.getElementById("UpdateObat");
 
 UpdateObat.addEventListener("click", () => {
-  console.log("button aktif");
   pushData(); // Call pushData function when the button is clicked
 });
