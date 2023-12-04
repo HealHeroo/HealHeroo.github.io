@@ -43,6 +43,5 @@ const pushData = () => {
 const updateButton = document.getElementById("updateButton");
 
 updateButton.addEventListener("click", () => {
-  console.log("button aktif");
   pushData(); // Call pushData function when the button is clicked
 });

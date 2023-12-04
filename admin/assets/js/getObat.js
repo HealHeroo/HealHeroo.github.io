@@ -50,6 +50,14 @@ export const dataObat = `
             </div>
             <p class="text-center text-sm text-gray-500">#HARGA#</p>
         </div>
+        <div>
+        <a
+          href="updateobat?obatId=#IDEDIT#"
+          class="inline-flex items-center px-2 cursor-pointer text-sm text-green-600 decoration-2 hover:underline font-medium"
+          >Edit
+        </a>
+        <button class="btn btn-outline-danger btn-sm" onclick="deleteObat('#IDHAPUS#')">Delete</button>
+        </div>
     </div>
 </div>
 `;
@@ -70,6 +78,6 @@ export function isiRow(value) {
     .replace("#HARGA#", value.harga)
     .replace("#IDEDIT#", value._id)
     .replace("#IDHAPUS#", value._id);
-  addInner("tableObat", content);
+  addInner("datasObat", content);
 }
 
