@@ -31,7 +31,6 @@ const pushData = () => {
 
   // Create the updated data object
   const data = {
-     
       nama_obat: nama_obatValue,
       jenis_obat: jenis_obatValue,
       keterangan: keteranganValue,
