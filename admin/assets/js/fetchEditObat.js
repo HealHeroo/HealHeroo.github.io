@@ -1,5 +1,5 @@
 // Import modul dengan path relatif
-import { isiFormulir } from "./editObat.js";
+import { isiData } from "./editObat.js";
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
 import { urlFetch } from "./urlEditObat.js";
 
@@ -20,4 +20,4 @@ function get(target_url, responseFunction) {
 }
 
 // Panggil fungsi get untuk mendapatkan data obat dan isiData untuk menampilkan data
-get(urlFetch, isiFormulir);
+get(urlFetch, isiData);
