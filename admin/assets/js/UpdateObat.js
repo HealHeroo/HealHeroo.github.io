@@ -24,27 +24,25 @@ const putData = (target_url, datajson, responseFunction) => {
 };
 
 const pushData = () => {
-  const nama_obat = getValue("nama_obat"); 
-  const jenis_obat = getValue("jenis_obat");
-  const keterangan = getValue("keterangan");
-  const harga = getValue("harga");
+  const nama_obatValue = getValue("nama_obat"); 
+  const jenis_obatValue = getValue("jenis_obat");
+  const keteranganValue = getValue("keterangan");
+  const hargaValue = getValue("harga");
 
   // Create the updated data object
   const data = {
      
-      nama_obat: nama_obat,
-      jenis_obat: jenis_obat,
-      keterangan: keterangan,
-      harga: harga,
-    
+      nama_obat: nama_obatValue,
+      jenis_obat: jenis_obatValue,
+      keterangan: keteranganValue,
+      harga: hargaValue, 
   };
-
   putData(urlPUT, data, AmbilResponse);
 };
 
-const updateButton = document.getElementById("updateButton");
+const UpdateObat = document.getElementById("UpdateObat");
 
-updateButton.addEventListener("click", () => {
+UpdateObat.addEventListener("click", () => {
   console.log("button aktif");
   pushData(); // Call pushData function when the button is clicked
 });

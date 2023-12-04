@@ -1,4 +1,4 @@
-export const isiData = (results) => {
+export const isiDataObat = (results) => {
     const inputMapping = [
       { id: "nama_obat", path: "obat.nama_obat" },
       { id: "jenis_obat", path: "obat.jenis_obat" },
