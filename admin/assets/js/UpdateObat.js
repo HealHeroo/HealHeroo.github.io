@@ -31,6 +31,7 @@ const pushData = () => {
 
   // Create the updated data object
   const data = {
+     
       nama_obat: nama_obatValue,
       jenis_obat: jenis_obatValue,
       keterangan: keteranganValue,
@@ -39,8 +40,9 @@ const pushData = () => {
   putData(urlPUT, data, AmbilResponse);
 };
 
-const UpdateObat = document.getElementById("UpdateObat");
+const updateButton = document.getElementById("updateButton");
 
-UpdateObat.addEventListener("click", () => {
+updateButton.addEventListener("click", () => {
+  console.log("button aktif");
   pushData(); // Call pushData function when the button is clicked
 });
