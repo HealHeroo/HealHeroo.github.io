@@ -4,68 +4,57 @@ export const URLGetObat =
   "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/obat_healhero";
 
 export const dataObat = `
-<div class="card bg-white rounded-xl shadow-md">
-    <div class="position-relative h-48 rounded-top-xl bg-cover" style="background-image: url('https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2232&amp;q=80');">
-        <div class="position-absolute rounded-top-xl top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 opacity-80"></div>
-        <div class="position-absolute top-0 end-0 p-4">
-            <a href="updateobat?obatId=#IDEDIT#" class="py-2 px-3 inline-flex cursor-pointer justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square w-3 h-3" viewBox="0 0 16 16">
-                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                </svg>
-                Edit Obat
-            </a>
-        </div>
-    </div>
-    <div class="pt-0 p-4 sm:pt-0 sm:p-7">
-    <div class="text-center gap-5 pt-5">
-        <h2 class="text-2xl text-gray-900 font-semibold">#NAMAOBAT#</h2>
-    </div>
-    <div class="text-center gap-2">
-        <label class="text-base text-gray-900 font-semibold">Jenis Obat</label>
-        <h3 class="text-base text-gray-900 font-normal">#JENISOBAT#</h3>
-    </div>
-    <div class="mt-2 border-b border-gray-200"></div>
-    <div class="row g-5 py-5">
-        <div class="col-md">
-            <div class="text-center mb-2">
-                <p class="inline-flex justify-content-center align-items-center gap-3 text-lg text-center font-semibold text-gray-900">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
-                        <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7h2.5V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
-                    </svg>
-                    Keterangan
-                </p>
-            </div>
-            <p class="text-center text-sm text-gray-500">#KETERANGAN#</p>
-        </div>
-        <div class="col-md">
-            <div class="text-center mb-2">
-                <p class="inline-flex justify-content-center align-items-center gap-3 text-xl text-center font-semibold text-gray-900">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-                        <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
-                        <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
-                    </svg>
-                    Harga
-                </p>
-            </div>
-            <p class="text-center text-sm text-gray-500">#HARGA#</p>
-        </div>
-        <div>
-        <a
-          href="updateobat?obatId=#IDEDIT#"
-          class="inline-flex items-center px-2 cursor-pointer text-sm text-green-600 decoration-2 hover:underline font-medium"
-          >Edit
-        </a>
-        <button class="btn btn-outline-danger btn-sm" onclick="deleteObat('#IDHAPUS#')">Delete</button>
-        </div>
-    </div>
+<tr>
+<td class="px-6 py-3 whitespace-nowrap">
+  <div class="flex items-center">
+    <span
+      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+      >#NAMAOBAT#</span
+    >
+  </div>
+</td>
+<td class="px-6 py-3 whitespace-nowrap">
+<div class="flex items-center">
+  <span
+    class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+    >#JENISOBAT#</span
+  >
 </div>
+</td>
+<td class="px-6 py-3 whitespace-nowrap">
+<div class="flex items-center">
+  <span
+    class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+    >#KETERANGAN#</span
+  >
+</div>
+</td>
+<td class="h-px w-px whitespace-nowrap">
+  <div class="flex items-center">
+    <span
+      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+      >#HARGA#</span
+    >
+  </div>
+</td>
+<td class="px-6 py-3 whitespace-nowrap">
+<a
+      href="updateobat?obatId=#IDEDIT#"
+      class="inline-flex items-center px-2 cursor-pointer text-sm text-green-600 decoration-2 hover:underline font-medium"
+    >
+      Edit
+ </a>
+  
+    <button class="btn btn-outline-danger btn-sm" onclick="deleteObat('#IDHAPUS#')">Delete</button>
+  </td>
+</td>
+</tr>
 `;
 
 
-export function responseDataObat(results) {
+export function responseData(results) {
     console.log(results);
-    isiRow(results);
+     results.forEach(isiRow);
     hide("skeletonLoader");
 }
 
@@ -80,4 +69,3 @@ export function isiRow(value) {
     .replace("#IDHAPUS#", value._id);
   addInner("datasObat", content);
 }
-
