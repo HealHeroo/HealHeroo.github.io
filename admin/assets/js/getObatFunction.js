@@ -1,4 +1,4 @@
-import { URLGetObat, responseDataObat } from "./getObat.js";
+import { URLGetObat, responseData } from "./getObat";
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
 import { hide } from "https://jscroot.github.io/element/croot.js";
 
@@ -38,4 +38,4 @@ const get = (target_url, responseFunction) => {
     });
 };
 
-get(URLGetObat, responseDataObat);
+get(URLGetObat, responseData);
