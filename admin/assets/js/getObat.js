@@ -51,7 +51,7 @@ export const tableObat = `
 `;
 
 
-export function responseDataObat(results) {
+export function responseData(results) {
     console.log(results);
     isiRow(results);
     hide("skeletonLoader");
