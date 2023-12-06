@@ -5,7 +5,7 @@ const deletePengguna = async (IDHAPUS) => {
   const authorizationToken = getCookie("Authorization");
 
   const isConfirmed = await Swal.fire({
-    title: "Apakah Anda yakin ingin menghapus data pengguna ini?",
+    title: "Apakah Anda yakin ingin menghapus pengguna ini?",
     icon: "warning",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
@@ -20,7 +20,7 @@ const deletePengguna = async (IDHAPUS) => {
 
     const target_url =
       "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/pengguna?id=" +
-     penggunaId;
+      penggunaId;
 
     try {
       const response = await fetch(target_url, {
