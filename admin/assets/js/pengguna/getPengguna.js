@@ -45,13 +45,14 @@ export const tablePengguna = `
     >
   </div>
 </td>
+
+<td class="px-6 py-3 whitespace-nowrap">
 <a
       href="updatepengguna?penggunaId=#IDEDIT#"
       class="inline-flex items-center px-2 cursor-pointer text-sm text-green-600 decoration-2 hover:underline font-medium"
     >
       Edit
  </a>
-<td class="px-6 py-3 whitespace-nowrap">
     <button class="btn btn-outline-danger btn-sm" onclick="deletePengguna('#IDHAPUS#')">Delete</button>
   </td>
 </td>
