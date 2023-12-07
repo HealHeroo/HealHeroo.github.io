@@ -1,4 +1,4 @@
-import { URLGetDriver, responseData } from "./getDriver.js";
+import { URLGetDriver, responseData } from "../driver/getDriver.js";
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
 import { hide } from "https://jscroot.github.io/element/croot.js";
 
