@@ -4,8 +4,8 @@ const handleNextButtonClick = () => {
     const selectedRole = selectRole.value;
   
     if (selectedRole === "Pengguna") {
-      window.location.href = "admin/signuppengguna.html";
+      window.location.href = "signuppengguna.html";
     } else if (selectedRole === "Driver") {
-      window.location.href = "admin/signupdriver.html";
+      window.location.href = "signupdriver.html";
     }
   };
