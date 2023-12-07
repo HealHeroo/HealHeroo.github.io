@@ -21,14 +21,6 @@ export const tablePesanan = `
     >
   </div>
 </td>
-<td class="px-6 py-3 whitespace-nowrap">
-  <div class="flex items-center">
-    <span
-      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
-      >#NAMAOBAT#</span
-    >
-  </div>
-</td>
 <td class="h-px w-px whitespace-nowrap">
   <div class="flex items-center">
     <span
@@ -37,7 +29,7 @@ export const tablePesanan = `
     >
   </div>
 </td>
-<td class="h-px w-px whitespace-nowrap">
+<td class="px-6 py-3 whitespace-nowrap">
   <div class="flex items-center">
     <span
       class="text-sm font-semibold text-gray-800 dark:text-gray-200"
