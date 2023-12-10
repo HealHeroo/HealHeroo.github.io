@@ -1,6 +1,6 @@
 import { addInner, hide } from "https://jscroot.github.io/element/croot.js";
 
-export const URLGetPengguna =
+export const URLGetDriver =
   "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/driverr";
 
 export const tableDriver = `
@@ -78,3 +78,4 @@ export function isiRow(value) {
     .replace("#IDHAPUS#", value._id);
   addInner("tableDaftarDriver", content);
 }
+
