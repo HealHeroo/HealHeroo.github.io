@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>HealHero</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -27,77 +26,50 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Impact
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom CSS for Diabetes Checker -->
+  <link href="assets/css/diabetes-checker.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- ... (your existing code) ... -->
 
-  <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">healhero@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+  <section id="diabetes-checker" class="diabetes-checker">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Cek Diabetes</h2>
+              <h3>"Kadar Glukosa dalam Darah (mg/dL)" merujuk pada jumlah glukosa atau gula dalam darah, yang diukur dalam satuan miligram per desiliter (mg/dL). Glukosa adalah sumber energi utama bagi tubuh dan diperoleh dari makanan yang kita konsumsi.
+
+                Pengukuran kadar glukosa dalam darah adalah salah satu metode yang umum digunakan untuk memantau kesehatan dan menilai risiko diabetes. Jumlah glukosa dalam darah yang normal bervariasi tergantung pada apakah seseorang sedang berpuasa atau setelah makan. </h3>
+              <form id="diabetesForm">
+                <div class="mb-3">
+                  <label for="glucoseLevel" class="form-label">Kadar Glukosa dalam Darah (mg/dL):</label>
+                  <input type="number" class="form-control" id="glucoseLevel" required>
+                </div>
+                <div class="mb-3">
+                  <label for="age" class="form-label">Usia:</label>
+                  <input type="number" class="form-control" id="age" required>
+                </div>
+                <div class="mb-3">
+                  <label for="gender" class="form-label">Jenis Kelamin:</label>
+                  <select class="form-select" id="gender" required>
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="cekDiabetes()">Cek Diabetes</button>
+              </form>
+              <div id="result" class="mt-4"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section><!-- End Top Bar -->
-
-  <header id="header" class="header d-flex align-items-center">
-
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>HealHero<span>.</span></h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="kategori.html">Category</a></li>
-         
-        </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
-
-  <h1>Cek Diabetes</h1>
-
-  <form id="diabetesForm">
-      <label for="glucoseLevel">Kadar Glukosa dalam Darah (mg/dL):</label>
-      <input type="number" id="glucoseLevel" required>
-
-      <label for="age">Usia:</label>
-      <input type="number" id="age" required>
-
-      <label for="gender">Jenis Kelamin:</label>
-      <select id="gender" required>
-          <option value="male">Laki-laki</option>
-          <option value="female">Perempuan</option>
-      </select>
-
-      <button type="button" onclick="cekDiabetes()">Cek Diabetes</button>
-  </form>
-
-  <div id="result"></div>
+  </section>
 
   <script src="./assets/js/cekDiabetes.js"></script>
-
 </body>
+
 </html>

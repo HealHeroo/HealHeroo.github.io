@@ -79,25 +79,43 @@
 
     <h1>Cek Nutrisi</h1>
 
-    <form id="nutrisiForm">
-        <label for="foodName">Nama Makanan:</label>
-        <input type="text" id="foodName" required>
-
-        <label for="calories">Kalori:</label>
-        <input type="number" id="calories" required>
-
-        <label for="protein">Protein (g):</label>
-        <input type="number" id="protein" required>
-
-        <label for="carbs">Karbohidrat (g):</label>
-        <input type="number" id="carbs" required>
-
-        <label for="fat">Lemak (g):</label>
-        <input type="number" id="fat" required>
-
-        <button type="button" onclick="cekNutrisi()">Cek Nutrisi</button>
-    </form>
-
+    <section id="nutrition-checker" class="nutrition-checker">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">Cek Nutrisi</h2>
+                  <form id="nutrisiForm">
+                    <div class="mb-3">
+                      <label for="foodName" class="form-label">Nama Makanan:</label>
+                      <input type="text" class="form-control" id="foodName" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="calories" class="form-label">Kalori:</label>
+                      <input type="number" class="form-control" id="calories" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="protein" class="form-label">Protein (g):</label>
+                      <input type="number" class="form-control" id="protein" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="carbs" class="form-label">Karbohidrat (g):</label>
+                      <input type="number" class="form-control" id="carbs" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="fat" class="form-label">Lemak (g):</label>
+                      <input type="number" class="form-control" id="fat" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="cekNutrisi()">Cek Nutrisi</button>
+                  </form>
+                  <div id="result" class="mt-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <div id="result"></div>
 
     <script src="./assets/js/cekNutrisi.js"></script>
