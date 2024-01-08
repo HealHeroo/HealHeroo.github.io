@@ -13,19 +13,19 @@ export const checkout = `
     >
   </div>
 </td>
-<td class="px-6 py-3 whitespace-nowrap">
-<div class="flex items-center">
-  <span
-    class="text-sm font-semibold text-gray-800 dark:text-gray-200"
-    >#JENISOBAT#</span
-  >
-</div>
+<td class="h-px w-px whitespace-nowrap">
+  <div class="flex items-center">
+    <span
+      class="text-sm font-semibold text-gray-800 dark:text-gray-200"
+      >#HARGA#</span
+    >
+  </div>
 </td>
 </tr>
 `;
 
 export function isiRow(value) {
-  const content = tableObat
+  const content = tableCheckout
     .replace("#NAMAOBAT#", value.nama_obat)
     .replace("#HARGA#", value.harga)
   addInner("tableCheckout", content);
