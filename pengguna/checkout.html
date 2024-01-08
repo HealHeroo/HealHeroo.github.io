@@ -115,9 +115,11 @@
                         <div class="form-group">
                             <label for="nomorhp">Nomor HP</label>
                             <input type="tel" class="form-control" id="nomorhp" placeholder="Nomor HP" required>
-                        </div>
-                        
+                        </div> 
                     </div>
+                    <div class="alert alert-info mt-4" id="totalAlert" style="display: none;">
+                      <p><strong>Total:</strong><span id="totalAmount">0.00</span></p>
+                  </div>
             
             
                     <!-- Add more customer information fields as needed -->
@@ -136,9 +138,6 @@
       </div>
   
       <!-- Total Price Alert -->
-      <div class="alert alert-info mt-4" id="totalAlert" style="display: none;">
-          <p><strong>Total:</strong><span id="totalAmount">0.00</span></p>
-      </div>
 
       <div class="alert mt-4" id="orderStatus" style="display: none;"></div>
     </div>
