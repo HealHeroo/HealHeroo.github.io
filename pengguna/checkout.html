@@ -73,8 +73,17 @@
               <!-- Order details will be displayed here -->
   
               <!-- Quantity, Price, and Total Price Form -->
-              <form id="orderForm">
+              <div id="orderForm">
                   <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="namaobat">Nama Obat</label>
+                      <select class="form-select" id="namaobat" required>
+                        <option value="Paracetamol">Paracetamol</option>
+                        <option value="Ibuprofen">Ibuprofen</option>
+                        <option value="Aspirin">Aspirin</option>
+                        <!-- Add more medicine options as needed -->
+                      </select>
+                    </div>
                       <div class="form-group col-md-4">
                           <label for="quantity">Quantity</label>
                           <input type="number" class="form-control" id="quantity" placeholder="Enter Quantity" required>
@@ -94,7 +103,7 @@
                   </div>
   
                   <!-- You can add more form fields as needed -->
-              </form>
+              </div>
           </div>
       </div>
   
@@ -102,6 +111,9 @@
       <div class="alert alert-info mt-4" id="totalAlert" style="display: none;">
           <p><strong>Total:</strong><span id="totalAmount">0.00</span></p>
       </div>
+
+      <div class="alert mt-4" id="orderStatus" style="display: none;"></div>
+    </div>
   </div>
 
     <!-- Customer Information Form -->
@@ -136,6 +148,7 @@
 <script>
   function formatRupiah(amount) {
     return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(amount);
+    var orderStatusElement = document.getElementById("orderStatus");
   }
 
   // Function to update total price
@@ -178,6 +191,6 @@
   <!-- Template Main JS File -->
   <script type="module" src="/pengguna/assets/js/getCheckoutFunction.js"></script>
   <script type="module" src="/pengguna/assets/js/getCheckout.js"></script>
- 
+
 </body>
 </html>
