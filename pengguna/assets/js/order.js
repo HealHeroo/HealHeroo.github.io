@@ -27,7 +27,7 @@ const Order = () => {
     quantity: getValue("quantity"),
     harga: getValue("harga"),
     totalharga: getValue("totalharga"),
-    status: "", 
+    status: ("status"), 
   };
 
   postOrder(target_url, datainjson, responseData);
