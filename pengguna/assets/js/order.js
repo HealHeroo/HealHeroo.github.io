@@ -29,7 +29,7 @@ const Order = () => {
     totalharga: getValue("totalharga"),
     status: ("status"), 
   };
-
+  console.log(datainjson);
   postOrder(target_url, datainjson, responseData);
 };
 
