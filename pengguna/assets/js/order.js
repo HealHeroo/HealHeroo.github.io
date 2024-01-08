@@ -30,23 +30,25 @@ const Order = () => {
     status: "", 
   };
 
-  postOrder(target_url, datainjson, responseOrder);
+  postOrder(target_url, datainjson, responseData);
 };
 
-const responseOrder = (result) => {
-  var orderStatusElement = document.getElementById("orderStatus");
-
-  if (result.status) {
-    orderStatusElement.style.display = "block";
-    orderStatusElement.classList.add("alert-success");
-    orderStatusElement.classList.remove("alert-danger");
-    orderStatusElement.innerText = "Order successfully placed.";
-  } else {
-    orderStatusElement.style.display = "block";
-    orderStatusElement.classList.add("alert-danger");
-    orderStatusElement.classList.remove("alert-success");
-    orderStatusElement.innerText = "Failed to place the order. " + result.message;
-  }
-};
+const responseData = (result) => {
+    if (result.status) {
+      Swal.fire({
+        icon: "success",
+        title: "Order Successful",
+        text: result.message,
+      }).then(() => {
+        window.location.href = "../apotik.html";
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Order Failed",
+        text: result.message,
+      });
+    }
+  };
 
 window.Order = Order;
