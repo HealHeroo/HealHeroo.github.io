@@ -143,6 +143,7 @@
         <div class="col-md-6 text-md-end">
           <button type="submit" onclick="Order()" class="btn btn-info">Order</button>
         </div>
+        <div class="mt-4" id="status" style="display: none;"></div>
     </div>
 </div>
 
@@ -151,6 +152,28 @@
   function formatRupiah(amount) {
     return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(amount);
     var orderStatusElement = document.getElementById("orderStatus");
+  }
+
+  function updateOrderStatusMessage(status, message) {
+    var orderStatusElement = document.getElementById("status");
+    orderStatusElement.style.display = "block";
+
+    if (status === "success") {
+      orderStatusElement.classList.add("alert-success");
+      orderStatusElement.classList.remove("alert-danger");
+      orderStatusElement.innerText = "Order successfully placed. " + message;
+    } else {
+      orderStatusElement.classList.add("alert-danger");
+      orderStatusElement.classList.remove("alert-success");
+      orderStatusElement.innerText = "Failed to place the order. " + message;
+    }
+  }
+
+  // Function to handle the order button click
+  function Order() {
+    // ... (existing Order function code) ...
+
+    postOrder(target_url, datainjson, responseOrder);
   }
 
   // Function to update total price
