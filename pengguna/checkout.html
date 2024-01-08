@@ -89,16 +89,16 @@
                           <input type="number" class="form-control" id="quantity" placeholder="Enter Quantity" required>
                       </div>
                       <div class="form-group col-md-4">
-                        <label for="price">Price</label>
-                        <select class="form-select" id="price" required>
+                        <label for="harga">Harga</label>
+                        <select class="form-select" id="harga" required>
                             <option value="5000">Rp. 5.000</option>
                             <option value="7000">Rp. 7.000</option>
                             <option value="10000">Rp. 10.000</option>
                         </select>
                     </div>
                       <div class="form-group col-md-4">
-                          <label for="totalHarga">Total Price</label>
-                          <input type="number" class="form-control" id="totalHarga" placeholder="Total Price" readonly>
+                          <label for="totalharga">Total Harga</label>
+                          <input type="number" class="form-control" id="totalharga" placeholder="Total Price" readonly>
                       </div>
                   </div>
   
@@ -140,7 +140,9 @@
 
         
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary">Place Order</button>
+        <div class="col-md-6 text-md-end">
+          <button type="submit" onclick="Order()" class="btn btn-info">Order</button>
+        </div>
     </div>
 </div>
 
@@ -153,24 +155,26 @@
 
   // Function to update total price
   function updateTotalPrice() {
-    var quantity = parseFloat(document.getElementById("quantity").value);
-    var price = parseFloat(document.getElementById("price").value);
+      var quantity = parseFloat(document.getElementById("quantity").value);
+      var price = parseFloat(document.getElementById("harga").value);
 
-    if (!isNaN(quantity) && !isNaN(price)) {
-      var totalHarga = quantity * price;
-      document.getElementById("totalHarga").value = formatRupiah(totalHarga);
+      if (!isNaN(quantity) && !isNaN(price)) {
+        var totalharga = quantity * price;
+        document.getElementById("totalharga").value = formatRupiah(totalharga);
 
-      // Display total price in the alert
-      document.getElementById("totalAmount").innerText = formatRupiah(totalHarga);
-      document.getElementById("totalAlert").style.display = "block";
-    } else {
-      document.getElementById("totalHarga").value = "";
+        // Display total price in the alert
+        document.getElementById("totalAmount").innerText = formatRupiah(totalharga);
+        document.getElementById("totalAlert").style.display = "block";
+      } else {
+        document.getElementById("totalharga").value = "";
 
-      // Hide the alert if either quantity or price is not a number
-      document.getElementById("totalAlert").style.display = "none";
+        // Hide the alert if either quantity or price is not a number
+        document.getElementById("totalAlert").style.display = "none";
+      }
+
+      // Update order status message
+      updateOrderStatus();
     }
-  }
-
   // Event listeners for quantity and price changes
   document.getElementById("quantity").addEventListener("input", updateTotalPrice);
   document.getElementById("price").addEventListener("input", updateTotalPrice);
