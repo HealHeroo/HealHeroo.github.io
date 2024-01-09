@@ -206,7 +206,8 @@
 
       if (!isNaN(quantity) && !isNaN(price)) {
         var totalharga = quantity * price;
-        document.getElementById("totalharga").value = formatRupiah(totalharga);
+        document.getElementById("totalharga").value = totalharga;  // Set the raw value
+
 
         // Display total price in the alert
         document.getElementById("totalAmount").innerText = formatRupiah(totalharga);
