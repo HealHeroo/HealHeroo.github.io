@@ -1,24 +1,12 @@
 import { getValue } from "https://jscroot.github.io/element/croot.js";
+import { getValue } from "https://jscroot.github.io/element/croot.js";
+import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
 
-function postOrder(target_url, datajson, responseFunction) {
-  var raw = JSON.stringify(datajson);
-
-  var requestOptions = {
-    method: "POST",
-    body: raw,
-    redirect: "follow",
-  };
-
-  fetch(target_url, requestOptions)
-    .then((response) => response.text())
-    .then((result) => responseFunction(JSON.parse(result)))
-    .catch((error) => console.log("error", error));
-}
-
-const Order = () => {
+const postOrder = () => {
   const target_url =
     "https://asia-southeast2-peak-equator-402307.cloudfunctions.net/pesanan";
-
+  const tokenvalue = getCookie("Authorization");
+  const tokenkey = "Authorization";
   const datainjson = {
     nama: getValue("nama"),
     alamat: getValue("alamat"),
@@ -29,26 +17,27 @@ const Order = () => {
     totalharga: getValue("totalharga"),
     status: ("status"), 
   };
+  postWithToken(target_url, tokenkey, tokenvalue, datainjson, responseData);
   console.log(datainjson);
-  postOrder(target_url, datainjson, responseData);
 };
 
 const responseData = (result) => {
-    if (result.status) {
-      Swal.fire({
-        icon: "success",
-        title: "Order Successful",
-        text: result.message,
-      }).then(() => {
-        window.location.href = "../apotik.html";
-      });
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Order Failed",
-        text: result.message,
-      });
-    }
-  };
+  if (result.status) {
+    Swal.fire({
+      icon: "success",
+      title: "Insert Successful",
+      text: result.message,
+    }).then(() => {
+      window.location.reload();
+    });
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Insert Failed",
+      text: result.message,
+    });
+  }
+};
 
-window.Order = Order;
+window.postOrder = postOrder;
+
