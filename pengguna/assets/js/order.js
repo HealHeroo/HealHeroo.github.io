@@ -15,7 +15,7 @@ const postOrder = () => {
     quantity: getValue("quantity"),
     harga: getValue("harga"),
     totalharga: getValue("totalharga"),
-    status: ("status"), 
+    status: ("Dikirim oleh Kurir"), 
   };
   postWithToken(target_url, tokenkey, tokenvalue, datainjson, responseData);
   console.log(datainjson);
