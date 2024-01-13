@@ -77,23 +77,31 @@
   </header><!-- End Header -->
   <!-- End Header -->
 
-  <div class="container mt-4">
-    <div class="card">
-      <div class="card-body">
-        <h1 class="mt-4 mb-4">Hitung Pola Tidur Sehat</h1>
-        <div class="form-group">
-          <label for="sleepTime">Waktu Tidur:</label>
-          <input type="time" id="sleepTime" class="form-control" required>
+  <section id="polaTidur" class="mt-4 mb-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="mt-4 mb-4">Hitung Pola Tidur Sehat</h1>
+              <form id="polaTidurForm">
+                <div class="form-group">
+                  <label for="sleepTime">Waktu Tidur:</label>
+                  <input type="time" id="sleepTime" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="wakeTime">Waktu Bangun:</label>
+                  <input type="time" id="wakeTime" class="form-control" required>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="hitungPolaTidur()">Hitung</button>
+              </form>
+              <div id="result" class="mt-4"></div>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="wakeTime">Waktu Bangun:</label>
-          <input type="time" id="wakeTime" class="form-control" required>
-        </div>
-        <button class="btn btn-primary" onclick="hitungPolaTidur()">Hitung</button>
-        <div id="result" class="mt-4"></div>
       </div>
     </div>
-  </div>
+  </section>
 
     <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
