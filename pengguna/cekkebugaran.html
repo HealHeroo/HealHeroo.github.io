@@ -77,82 +77,33 @@
   </header><!-- End Header -->
   <!-- End Header -->
 
-  <main id="main">
+  <div class="container">
+    <h1 class="mt-4 mb-4">Hitung Kebugaran</h1>
+    <div class="form-group">
+        <label for="age">Usia:</label>
+        <input type="number" id="age" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender" class="form-control" required>
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exerciseTime">Waktu Latihan per Hari (menit):</label>
+        <input type="number" id="exerciseTime" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="exerciseDays">Jumlah Latihan per Minggu:</label>
+        <input type="number" id="exerciseDays" class="form-control" required>
+    </div>
+    <button class="btn btn-primary" onclick="hitungKebugaran()">Hitung</button>
+    <div id="result" class="mt-4"></div>
+</div>
+    <div id="result"></div>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio sections-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Cek Kesehatan</h2>
-          <!-- <p>Dalam aplikasi HealHero menyediakan berbagai layanan dan informasi yang berfokus pada kesehatan serta pengetahuan pengguna.</p> -->
-        </div>
-
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-
-          <div>
-            <ul class="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-hl">Healthy Life</li>
-              <li data-filter=".filter-id">Internal Disease</li>
-              <li data-filter=".filter-ed">Eksternal Disease</li>
-              <li data-filter=".filter-od">Other Diseases</li>
-            </ul><!-- End Portfolio Filters -->
-          </div>
-
-          <div class="row gy-4 portfolio-container">
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-hl">
-              <div class="portfolio-wrap">
-                <a href="assets/img/kategori/nutrisi.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/kategori/nutrisi.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="ceknutrisi.html" title="More Details">Nutrisi</a></h4>
-                  <p>Cek Nutrisi Anda Disini</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-od">
-                <div class="portfolio-wrap">
-                  <a href="assets/img/kategori/diabetes.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/kategori/diabetes.jpg" class="img-fluid" alt=""></a>
-                  <div class="portfolio-info">
-                    <h4><a href="cekdiabetes.html" title="More Details">Diabetes</a></h4>
-                    <p>Cek Diabetes Anda Disini</p>
-                  </div>
-                </div>
-              </div><!-- End Portfolio Item -->
-
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-hl">
-                <div class="portfolio-wrap">
-                  <a href="assets/img/kategori/kebugaran.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/kategori/kebugaran.jpg" class="img-fluid" alt=""></a>
-                  <div class="portfolio-info">
-                    <h4><a href="cekkebugaran.html" title="More Details">Kebugaran</a></h4>
-                    <p>Cari tahu jenis olahraga yang cocok untuk Kamu</p>
-                  </div>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-          </div><!-- End Portfolio Container -->
-
-
-          <div class="col-xl-4 col-md-6 portfolio-item filter-hl">
-            <div class="portfolio-wrap">
-              <a href="assets/img/kategori/tidur.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/kategori//tidur.jpg" class="img-fluid" alt=""></a>
-              <div class="portfolio-info">
-                <h4><a href="cekpolatidur.html" title="More Details">Pola Tidur Sehat</a></h4>
-                <p>Beragam tips dan cara mengobati gangguan tidur yang Kamu alami </p>
-              </div>
-            </div>
-          </div><!-- End Portfolio Item -->
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
     <div class="container">
@@ -219,22 +170,6 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script type="module" src="https://cdn.jsdelivr.net/gh/HealHeroo/jshealhero@0.1.6/assets/main.js"></script>
-
+    <script src="./assets/js/cekKebugaran.js"></script>
 </body>
-
 </html>
