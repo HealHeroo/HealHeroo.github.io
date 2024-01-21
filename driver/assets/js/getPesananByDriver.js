@@ -91,7 +91,6 @@ export function isiRow(value) {
     .replace("#TOTALHARGA#", value.totalharga)
     .replace("#STATUS#", value.status)
     
-   
   addInner("tableDaftarPesanan", content);
 }
 
