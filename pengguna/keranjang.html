@@ -233,6 +233,33 @@
 
 <!-- Template Main JS File -->
 <script type="module" src="https://cdn.jsdelivr.net/gh/HealHeroo/jshealhero@0.1.6/assets/main.js"></script>
+<script>
+  function getQueryParam(key) {
+    const queryString = window.location.search.substring(1);
+    const params = new URLSearchParams(queryString);
+    return params.get(key);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const nama = getQueryParam('nama');
+    const alamat = getQueryParam('alamat');
+    const nomorhp = getQueryParam('nomorhp');
+    const namaobat = getQueryParam('namaobat');
+    const quantity = getQueryParam('quantity');
+    const harga = getQueryParam('harga');
+    const totalharga = getQueryParam('totalharga');
+    const status = getQueryParam('status');
+
+    document.getElementById('customerName').innerText = nama;
+    document.getElementById('customerAddress').innerText = alamat;
+    document.getElementById('customerPhone').innerText = nomorhp;
+    document.getElementById('medicineName').innerText = namaobat;
+    document.getElementById('quantity').innerText = quantity;
+    document.getElementById('pricePerUnit').innerText = harga;
+    document.getElementById('totalPrice').innerText = totalharga;
+    document.getElementById('orderStatus').innerText = status;
+  });
+</script>
 
 </body>
 
